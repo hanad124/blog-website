@@ -13,12 +13,13 @@ const getPostContent = (slug: string) => {
   return matterResult;
 };
 
-const generateStaticParam = async () => {
+export const generateStaticParams = async () => {
   const posts = getPostMetadata();
-  return posts.map((post) => {
-    slug: post.slug;
-  });
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 };
+
 const PostPage = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
