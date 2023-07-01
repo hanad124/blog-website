@@ -3,9 +3,9 @@ export interface PostMetadata {
   date: string;
   subtitle: string;
   slug: string;
-  image: string;
+  image: string | any;
   author: string;
-  avator: string;
+  avator: string | any;
   category: string;
   career: string;
 }

@@ -25,9 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>
-        <div className="mx-auto max-w-5xl relative">
-          <Header />
+      <body className="">
+        <Header />
+        <div className="mx-auto w-full max-w-5xl ">
           {children}
           {footer}
         </div>

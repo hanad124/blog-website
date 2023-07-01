@@ -1,34 +1,55 @@
-header {
-  margin-bottom: 8rem;
-  .logo {
-    color: #fff;
-  }
+// .header-wrapper {
+//   position: sticky;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
 
-  .searchBar {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 100px;
-    background: rgba(31, 41, 55, 0.6);
-    padding: 0 1rem;
+//   z-index: 10;
 
-    .search-icon {
-      color: #ffffff;
-      opacity: 0.10000000149011612;
-    }
+//   header {
+//     // background-color: #4b5563;
+//     // border-bottom: 2px solid #2772da78;
+//     // border-radius: 0.3rem;
+//     padding: 1rem;
+//     margin-bottom: 8rem;
+//     .logo {
+//       color: #fff;
+//     }
 
-    &:has(input:focus) {
-      outline: 2px solid rgba(100, 100, 100, 0.41);
-    }
+//     .searchBar {
+//       display: flex;
+//       align-items: center;
+//       gap: 1rem;
+//       border-radius: 100px;
+//       background: rgba(31, 41, 55, 0.6);
+//       padding: 0 1rem;
 
-    input {
-      background: transparent;
-      color: #fff;
+//       .search-icon {
+//         color: #ffffff;
+//         opacity: 0.10000000149011612;
+//       }
 
-      &:focus {
-        outline: none;
-      }
-    }
-  }
+//       &:has(input:focus) {
+//         outline: 2px solid rgba(100, 100, 100, 0.41);
+//       }
+
+//       input {
+//         background: transparent;
+//         color: #fff;
+
+//         &:focus {
+//           outline: none;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .onscroll {
+//   // background-color: #4b5563;
+//   border-bottom: 2px solid #4b556378;
+// }
+
+.header {
+  border-bottom: 1px solid rgba(186, 186, 186, 0.402);
 }
-
