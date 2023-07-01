@@ -51,21 +51,19 @@ const PostPage = (props: any) => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-10 mx-3">
         <Image
           src={post.data.image}
           alt="Description of image"
           width={830}
           height={500}
-          className="rounded-md mb-11 text-center w-[48rem] h-[30rem]  max-w-[48rem] max-h-[30rem]"
+          className="rounded-md mb-11 text-center w-[48rem] m-auto max-h-[30rem] h-auto max-w-lg"
         />
+        {/* w-16 md:w-32 lg:w-48 */}
       </div>
       <div className="flex justify-center">
-        <div className="">
-          {/* <h1 className="text-primarycolor font-bold text-3xl">
-            {post.data.title}
-          </h1> */}
-          <article className="prose prose-xl dark:prose-invert md:prose-lg lg:prose-xl">
+        <div className="sm-ml-28 m-auto break-words">
+          <article className="prose md:prose-lg lg:prose-xl dark:prose-invert text-white prose-a:text-[#ffffff99] prose-headings:text-white prose-strong:text-[#ffffff99] prose-blockquote:text-[#fff] prose-code:text-[#fff] prose-img:rounded-xl prose-img:w-[2rem] prose-img:h-[16rem]">
             <Markdown>{post.content}</Markdown>
           </article>
         </div>
