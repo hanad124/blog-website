@@ -9,17 +9,6 @@ import { HiBars3 } from "react-icons/hi2";
 import { HiXMark } from "react-icons/hi2";
 
 const Header = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  function handleScroll() {
-    const position = window.scrollY;
-    if (position > 1) {
-      console.log(position);
-    }
-  }
-
-  handleScroll();
-
   return (
     // <div className={`header-wrapper`}>
     //   <header
