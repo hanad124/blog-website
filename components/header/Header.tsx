@@ -70,7 +70,14 @@ const Header = () => {
           <div className="rounded-lg bg-[#4B5563] shadow-lg ring-1 ring-black ring-opacity-5 divide-y-q divide-gray-50">
             <div className="px-5 pt-5 pb-6 text-white">
               <div className="flex items-center justify-between">
-                <h1 className="font-bold">Faruq Blog</h1>
+                <div className="flex items-center gap-3">
+                  <div className="bg-slate-700 font-bold text-xl w-7 h-7 rounded-md flex justify-center items-center text-white">
+                    F
+                  </div>
+                  <h1 className="font-bold text-white text-lg">
+                    <Link href="/">Faruq Blog</Link>
+                  </h1>
+                </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-[#4B5563] p-2 text-white hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close menu</span>
