@@ -8,4 +8,5 @@ export interface PostMetadata {
   avator: string | any;
   category: string;
   career: string;
+  // createdAt: string;
 }

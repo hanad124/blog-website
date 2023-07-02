@@ -6,7 +6,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 const PostPreview = (props: PostMetadata) => {
   return (
-    <div className="post-preview max-w-lg mx-auto h-[506px] max-h-[506px] w-[20rem] bg-white rounded-lg mt-0 flex flex-col">
+    <div className="post-preview max-w-lg mx-auto h-[506px] max-h-[506px] w-[19rem] bg-white rounded-lg mt-0 flex flex-col">
       <div className="relative h-52">
         <Image
           src={props.image || <Skeleton />}

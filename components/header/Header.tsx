@@ -34,8 +34,8 @@ const Header = () => {
     //   </header>
     // </div>
 
-    <div className="header sticky top-0 left-0 w-full bg-[#4B5563]  z-10  mb-[8rem]">
-      <Popover className="container mx-auto flex   items-center w-screen px-6 py-1 h-20">
+    <div className="header sticky top-0 left-0 w-full bg-[#4B5563]  z-10  mb-[4rem]">
+      <Popover className="container mx-auto flex   items-center sm:justify-between w-screen px-6 py-1 h-20">
         <div className="flex items-center gap-3">
           <div className="bg-slate-700 font-bold text-xl w-7 h-7 rounded-md flex justify-center items-center text-white">
             F
@@ -45,7 +45,7 @@ const Header = () => {
           </h1>
         </div>
         <div className="grow ">
-          <div className="hidden sm:flex items-center justify-center gap-2 md:gap-8 text-white">
+          <div className="hidden lg:flex items-center justify-center gap-2 md:gap-8 text-white">
             <Link href="ui-design">UI-design</Link>
             <Link href="front-end">Front-end</Link>
             <Link href="back-end">Back-end</Link>
@@ -119,31 +119,27 @@ const Header = () => {
                   </Link>
                 </nav>
               </div>
-              <div className="mt-6 flex flex-col items-center gap-2">
-                <Link
-                  href="register"
-                  className="rounded-md text-center  bg-white px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500"
-                >
-                  Sign up
-                </Link>
-                <Link
-                  href="register"
-                  className="rounded-md text-center bg-white px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500"
-                >
-                  Login
-                </Link>
+              <div className="header-search mt-6 flex items-center text-white items-center gap-2  rounded-full  px-2 py-1">
+                <FiSearch />
+                <input
+                  type="text"
+                  className="bg-transparent px-3"
+                  placeholder="search..."
+                />
               </div>
             </div>
           </div>
         </Popover.Panel>
 
-        <div className="hidden sm:block text-white">
-          <Link href="/register" className="mr-2 font-bold">
-            Sign up
-          </Link>
-          <Link href="login" className="font-bold">
-            Login
-          </Link>
+        <div className="header-search hidden sm:block text-white items-center gap-2  rounded-full  px-2 py-1">
+          <div className="flex items-center">
+            <FiSearch />
+            <input
+              type="text"
+              className="bg-transparent px-3"
+              placeholder="search..."
+            />
+          </div>
         </div>
       </Popover>
     </div>
