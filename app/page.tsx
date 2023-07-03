@@ -23,22 +23,22 @@ const HomePage = () => {
       </div>
 
       <div className="flex justify-center">
-        <div className="text-slate-300 mx-2 text-center lg:text-2xl sm:text-lg sm:leading-3  md:leading-8 md-text-lg w-[43rem] md:w-[35rem] leading-7 font-regular tracking-1 lg:leading-10">
+        <div className="text-[#9ca3af] mx-2 text-center lg:text-2xl sm:text-lg sm:leading-3  md:leading-8 md-text-lg w-[43rem] md:w-[35rem] leading-7 font-regular tracking-1 lg:leading-10">
           Welcome to my personal blog about programming! Here, I share my
           passion for coding and all things tech-related.
         </div>
       </div>
       <div className="flex justify-center mb-14">
-        <div className="header-search mt-6 flex items-center text-white items-center gap-2  rounded-full  px-2 py-1">
+        <div className="header-search mt-6 flex text-white items-center gap-2  rounded-full  px-2 py-1">
           <FiSearch />
           <input
             type="text"
             className="bg-transparent px-3 lg:w-[24rem] md:w-[18rem]"
-            placeholder="search..."
+            placeholder="search blog posts..."
           />
         </div>
       </div>
-      <div className="flex flex-wrap gap-x-0 justify-center">
+      <div className="flex flex-wrap gap-y-4 justify-center">
         {postPreviews}
       </div>
     </div>

@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   const footer = (
     <footer>
-      <div className="border-t border-slate-500 mt-6 py-6 text-center text-slate-400">
+      <div className="border-t border-slate-500 mt-10 py-6 text-center text-slate-400">
         <p>
           Copyright 2023 &#169; <Link href={"/"}>Faruq Blog</Link>
         </p>

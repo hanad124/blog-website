@@ -1,6 +1,6 @@
 ---
 title: "Building a QR code micro-app"
-subtitle: "Build a serverless 'hello-world' QR code app with Python and AWS."
+subtitle: " Build a serverless 'hello-world' QR code app with Python and AWS. Build a serverless 'hello-world' QR code app with Python and AWS."
 date: "2021-08-14"
 category: "Programming"
 image: "https://i.pinimg.com/236x/19/67/d7/1967d765bed50a577cd5030c2cf56f64.jpg"

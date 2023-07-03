@@ -36,7 +36,7 @@ const PostPage = (props: any) => {
           <div className="dot"></div>
           <p className="text-secondarycolor">{post.data.date}</p>
         </div>
-        <p className="text-primarycolor text-[2rem] font-medium">
+        <p className="text-primarycolor text-[2rem] mx-2 font-medium">
           {post.data.title || <Skeleton />}
         </p>
         <div className="flex justify-center mt-6">
@@ -55,7 +55,7 @@ const PostPage = (props: any) => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-10 mx-3 lg:mx-24">
+      <div className="flex justify-center mt-10 mx-3 lg:mx-52">
         <Image
           src={post.data.image || <Skeleton />}
           alt="Description of image"
@@ -67,7 +67,7 @@ const PostPage = (props: any) => {
       </div>
       <div className="flex justify-center">
         <div className="max-[398px]:w-[22rem] m-auto break-words">
-          <article className="prose md:prose-lg lg:prose-xl dark:prose-invert text-white prose-a:text-blue-400 prose-headings:text-white prose-strong:text-[#ffffff99] prose-blockquote:text-[#fff] prose-code:text-[#fff] prose-img:rounded-xl prose-img:w-[30rem] prose-img:h-[16rem]">
+          <article className="prose md:prose-lg lg:prose-xl dark:prose-invert text-white prose-a:text-blue-400 prose-headings:text-white prose-strong:text-[#ffffff99] prose-blockquote:text-[#fff] prose-img:rounded-xl prose-img:w-[30rem] prose-img:h-[16rem]">
             <Markdown>{post.content}</Markdown>
           </article>
         </div>
