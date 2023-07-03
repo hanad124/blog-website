@@ -12,7 +12,7 @@ import { BiUpArrowAlt } from "react-icons/bi";
 const Header = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  function handleScroll() {
+  function handleScroll(): void {
     if (window.scrollY > 300) {
       setIsVisible(true);
     } else {
@@ -21,10 +21,14 @@ const Header = () => {
   }
 
   function handleClick() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   }
 
-  window.addEventListener("scroll", handleScroll);
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", handleScroll);
+  }
 
   return (
     <>
