@@ -6,14 +6,14 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 const PostPreview = (props: PostMetadata) => {
   return (
-    <div className="post-preview max-w-lg mx-auto  h-[426px] max-h-[426px] w-[19rem] rounded-lg mt-0 flex flex-col border border-slate-700  items-end ">
+    <div className="post-preview max-w-lg mx-auto relative z-0 h-[426px] max-h-[426px] w-[19rem] rounded-lg mt-0 flex flex-col border border-slate-700  items-end ">
       <div className="relative h-52 w-full">
         <Image
           src={props.image || <Skeleton />}
           alt="Description of image"
           layout="fill"
           objectFit="cover"
-          className="rounded-t-[10px] border-b-2 border-slate-700"
+          className="rounded-t-[10px] border-b-2 border-slate-700  relative z-10 "
         />
       </div>
       <div className=" flex flex-col">

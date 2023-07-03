@@ -34,7 +34,7 @@ const Header = () => {
     <>
       {isVisible && (
         <button
-          className="fixed bottom-10 right-10 bg-gray-800 text-white rounded-full p-3 text-lg shadow-lg focus:outline-none border-2 border-gray-700 hover:bg-gray-700"
+          className="fixed bottom-10 right-10  bg-gray-800 text-white rounded-full p-3 text-lg shadow-lg focus:outline-none border-2 border-gray-700 hover:bg-gray-700 z-50"
           onClick={handleClick}
         >
           <BiUpArrowAlt className="to-top-arrow text-lg font-lg" />
