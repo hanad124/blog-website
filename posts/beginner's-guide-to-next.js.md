@@ -29,7 +29,7 @@ Next.js offers several advantages over traditional React applications. Some of t
 
 ## Getting started with Next.js
 
-To get started with Next.js, you'll need to have Node.js and npm installed on your computer. Once you have those installed, you can create a new Next.js project using the following command:
+To get started with `Next.js`, you'll need to have Node.js and npm installed on your computer. Once you have those installed, you can create a new Next.js project using the following command:
 
 ```bash
 npx create-next-app my-app

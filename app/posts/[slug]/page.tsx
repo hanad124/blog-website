@@ -66,7 +66,7 @@ const PostPage = (props: any) => {
         {/* w-16 md:w-32 lg:w-48 */}
       </div>
       <div className="flex justify-center">
-        <div className="max-[398px]:w-[22rem] m-auto break-words">
+        <div className="max-[398px]:w-[22rem] m-auto break-words sm:mx-4">
           <article className="prose md:prose-lg lg:prose-xl dark:prose-invert text-white prose-a:text-blue-400 prose-headings:text-white prose-strong:text-[#ffffff99] prose-blockquote:text-[#fff] prose-img:rounded-xl prose-img:w-[30rem] prose-img:h-[16rem]">
             <Markdown>{post.content}</Markdown>
           </article>

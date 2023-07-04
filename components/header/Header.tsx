@@ -125,11 +125,11 @@ const Header = () => {
                     </Link>
                   </nav>
                 </div>
-                <div className="header-search mt-6 flex items-center text-white items-center gap-2  rounded-full  px-2 py-1">
+                <div className="header-search mt-6 flex text-white items-center gap-2  rounded-full  px-2 py-1">
                   <FiSearch />
                   <input
                     type="text"
-                    className="bg-transparent px-3"
+                    className="bg-transparent px-3 w-full"
                     placeholder="search..."
                   />
                 </div>
